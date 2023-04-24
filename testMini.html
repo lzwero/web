@@ -11,17 +11,20 @@
 			document.createElement("myElement")
 
 			function getMini(params){
+				console.log("======getMini=======")
 				var result = params.a + params.b 
 				return result
 			}
 
 			function btnAction() {
+				console.log("======btnAction=======")
 				miniProgram.sendWebviewEvent({
   					test: 123
 				})
 			}
 
 			function openAction() {
+				console.log("======openAction=======")
 				miniProgram.navigateTo({ url: '/pages/index/index' })
 			}
 		</script>
