@@ -16,7 +16,6 @@
   		</script>
 
 		<script >
-			
 			// document.createElement("myElement")
 
 			// function getMini(params){
@@ -37,6 +36,13 @@
 		</script>
 
 		<script >
+
+			function onEvent(e) {
+  				console.log(e.test) // 123
+			}
+			// 注册监听
+			ft.miniProgram.onWebviewEvent(onEvent)
+
 			// 创建vConsole实例
     		// var vConsole = new VConsole();
 			function btnAction() {
@@ -67,6 +73,10 @@
 		    function handleClick() {
 		      alert("Button clicked!");
 		    }
+
+		    function openActionMsg(){
+		    	ft.miniProgram.navigateTo({ url: '/pages/msg/msg' });
+		    }
 		</script>
 
 
@@ -85,6 +95,7 @@
  		<button onclick="nativeAction()">发送事件给原生</button>
  		<button onclick="openAction()">打开小程序</button>
  		<button onclick="handleClick()">Click me</button>
+ 		<button onclick="openActionMsg()">打开消息页面</button>
 		<footer>
 			<p>© 2014 W3Schools. All rights reserved.</p>
 		</footer>
