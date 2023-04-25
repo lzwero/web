@@ -14,36 +14,28 @@
     	// 输出日志信息
     	console.log('Hello, vConsole!');
   		</script>
-		<!-- <script src="https://unpkg.com/vconsole/dist/vconsole.min.js"></script>
-		<script>
-  			// VConsole will be exported to `window.VConsole` by default.
-  			var vConsole = new window.VConsole();
-		</script> -->
 
 		<script type="text/javascript">
 			
-			document.createElement("myElement")
+			// document.createElement("myElement")
 
 			// function getMini(params){
 			// 	console.log("======getMini=======")
 			// 	var result = params.a + params.b 
 			// 	return result
 			// }
-
+		// 创建vConsole实例
+    	var vConsole = new VConsole();
 			function getMini(params,params1){
   				console.log("getMini" + params);
   				return params + params1
 			}
 
 		</script>
-		
-
 
 		<script type="text/javascript">
-			// import ft from 'finclip-js-sdk'
-
-			
-
+			// 创建vConsole实例
+    		var vConsole = new VConsole();
 			function btnAction() {
 				testJs()
 				console.log('======btnAction=======')
@@ -58,27 +50,8 @@
 			}
 		</script>
 
-		<style type="text/css">
-			
-			myElement {
-				display: block;
-				background-color: #ddd;
-				padding: 50px;
-				font-size: 30px;
-			}
-
-		</style>
 
 		<title> Title of document </title>
-
-
-		<style>
-		body {font-family: Verdana, sans-serif; font-size:0.8em;}
-		header,nav, section,article,footer
-		{border:1px solid grey; margin:5px; padding:8px;}
-		nav ul {margin:0; padding:0;}
-		nav ul li {display:inline; margin:5px;}
-		</style>
 
 	</head>
 
@@ -86,77 +59,16 @@
 
 		<script src="test.js"></script>
 
-		
-
 		<header>
   			<h1>HTML5 SKeleton</h1>
 		</header>
 
-		<nav>
-			<ul>
-			  <li><a href="html5_semantic_elements.asp">HTML5 Semantic</a></li>
-			  <li><a href="html5_geolocation.asp">HTML5 Geolocation</a></li>
-			  <li><a href="html5_canvas.asp">HTML5 Graphics</a></li>
-			</ul>
-		</nav>
-
-		<h1>标题1</h1>
-		<h2>标题2</h2>
-		<h3> 标题3 </h3>
-		<h4>标题4</h4>
-		<h5>标题5</h5>
-		<h6>标题6</h6>
-		<myElement>
-			自定义属性
-		</myElement>
-		content of  the document
-		<button type="submit" id="btn_submit" οnclick="btnAction()">发送事件给小程序</button>
-		<button type="submit1" id="btn_submit1" οnclick="openAction()">打开小程序</button>
-
-		<!-- <article>
-			London is the capital city of England. 
-			It is the most populous city in the United Kingdom, 
-			with a metropolitan area of over 13 million inhabitants.
-		</article>
-
-
-
-		<section>
-
-			<h1>Famous Cities</h1>
-
-			<article>
-				<h2>London</h2>
-				<p>London is the capital city of England. It is the most populous city in the United Kingdom,
-				with a metropolitan area of over 13 million inhabitants.</p>
-			</article>
-
-			<article>
-				<h2>Paris</h2>
-				<p>Paris is the capital and most populous city of France.</p>
-			</article>
-
-			<article>
-				<h2>Tokyo</h2>
-				<p>Tokyo is the capital of Japan, the center of the Greater Tokyo Area,
-				and the most populous metropolitan area in the world.</p>
-			</article>
-
-		</section>
-
-
-		<nav>
-		  <ul>
-		    <li>News</li>
-		    <li>Sports</a></li>
-		    <li>Weather</li>
-		  </ul>
-		</nav> -->
+		<button οnclick="btnAction()">发送事件给小程序</button>
+		<button οnclick="openAction()">打开小程序</button>
 
 		<footer>
 			<p>© 2014 W3Schools. All rights reserved.</p>
 		</footer>
 	</body>
-	
 
 </html>
