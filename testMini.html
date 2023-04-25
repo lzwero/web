@@ -25,9 +25,9 @@
 			// 	return result
 			// }
 		// 创建vConsole实例
-    	var vConsole = new VConsole();
+    	// var vConsole = new VConsole();
 			function getMini(params,params1){
-  				console.log("getMini" + params);
+  				console.log('getMini' + params);
   				return params + params1
 			}
 
@@ -35,18 +35,20 @@
 
 		<script type="text/javascript">
 			// 创建vConsole实例
-    		var vConsole = new VConsole();
+    		// var vConsole = new VConsole();
 			function btnAction() {
-				testJs();
-				console.log('======btnAction=======');
-				ft.miniProgram.sendWebviewEvent({
-  					test: 123
-				});
+				alert("Button btnAction!");
+				// console.log('======btnAction=======');
+				// testJs();
+				// ft.miniProgram.sendWebviewEvent({
+  		// 			test: 123
+				// });
 			}
 
 			function openAction() {
-				console.log('======openAction=======');
-				ft.miniProgram.navigateTo({ url: '/pages/index/index' });
+				alert("Button openAction!");
+				// console.log('======openAction=======');
+				// ft.miniProgram.navigateTo({ url: '/pages/index/index' });
 			}
 		</script>
 
