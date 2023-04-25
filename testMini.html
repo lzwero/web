@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">	
-		<script type="text/javascript" src="finclip.js">
+		<script src="finclip.js">
 			
 		</script>
 		<script src="https://cdn.bootcdn.net/ajax/libs/vConsole/3.9.1/vconsole.min.js"></script>
@@ -15,7 +15,7 @@
     	console.log('Hello, vConsole!');
   		</script>
 
-		<script type="text/javascript">
+		<script >
 			
 			// document.createElement("myElement")
 
@@ -33,7 +33,7 @@
 
 		</script>
 
-		<script type="text/javascript">
+		<script >
 			// 创建vConsole实例
     		// var vConsole = new VConsole();
 			function btnAction() {
@@ -50,6 +50,10 @@
 				// console.log('======openAction=======');
 				// ft.miniProgram.navigateTo({ url: '/pages/index/index' });
 			}
+	
+    function handleClick() {
+      alert("Button clicked!");
+    }
 		</script>
 
 
@@ -67,7 +71,7 @@
 
 		<button οnclick="btnAction()">发送事件给小程序</button>
 		<button οnclick="openAction()">打开小程序</button>
-
+ 		<button onclick="handleClick()">Click me</button>
 		<footer>
 			<p>© 2014 W3Schools. All rights reserved.</p>
 		</footer>
