@@ -37,18 +37,18 @@
 			// 创建vConsole实例
     		// var vConsole = new VConsole();
 			function btnAction() {
-				alert("Button btnAction!");
-				// console.log('======btnAction=======');
-				// testJs();
-				// ft.miniProgram.sendWebviewEvent({
-  		// 			test: 123
-				// });
+				// alert("Button btnAction!");
+				console.log('======btnAction=======');
+				testJs();
+				ft.miniProgram.sendWebviewEvent({
+  					test: 123
+				});
 			}
 
 			function openAction() {
-				alert("Button openAction!");
-				// console.log('======openAction=======');
-				// ft.miniProgram.navigateTo({ url: '/pages/index/index' });
+				// alert("Button openAction!");
+				console.log('======openAction=======');
+				ft.miniProgram.navigateTo({ url: '/pages/index/index' });
 			}
 	
     function handleClick() {
@@ -68,9 +68,8 @@
 		<header>
   			<h1>HTML5 SKeleton</h1>
 		</header>
-
-		<button οnclick="btnAction()">发送事件给小程序</button>
-		<button οnclick="openAction()">打开小程序</button>
+		<button onclick="btnAction()">发送事件给小程序</button>
+ 		<button onclick="openAction()">打开小程序</button>
  		<button onclick="handleClick()">Click me</button>
 		<footer>
 			<p>© 2014 W3Schools. All rights reserved.</p>
