@@ -23,7 +23,7 @@
 			// }
 
 			function getMini(params,params1){
-  				console.log("getMini" + params);
+  				vConsole.log("getMini" + params);
   				return params + params1
 			}
 
@@ -38,14 +38,14 @@
 
 			function btnAction() {
 				testJs()
-				console.log("======btnAction=======")
+				vConsole.log("======btnAction=======")
 				ft.miniProgram.sendWebviewEvent({
   					test: 123
 				})
 			}
 
 			function openAction() {
-				console.log("======openAction=======")
+				vConsole.log("======openAction=======")
 				ft.miniProgram.navigateTo({ url: '/pages/index/index' })
 			}
 		</script>
