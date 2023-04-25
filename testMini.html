@@ -7,7 +7,13 @@
 		</script>
 		<script src="https://cdn.bootcdn.net/ajax/libs/vConsole/3.9.1/vconsole.min.js"></script>
   		<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/vConsole/3.9.1/vconsole.min.css">
-		
+		<script>
+    	// 创建vConsole实例
+    	var vConsole = new VConsole();
+
+    	// 输出日志信息
+    	console.log('Hello, vConsole!');
+  		</script>
 		<!-- <script src="https://unpkg.com/vconsole/dist/vconsole.min.js"></script>
 		<script>
   			// VConsole will be exported to `window.VConsole` by default.
@@ -25,7 +31,7 @@
 			// }
 
 			function getMini(params,params1){
-  				vConsole.log("getMini" + params);
+  				console.log("getMini" + params);
   				return params + params1
 			}
 
@@ -40,14 +46,14 @@
 
 			function btnAction() {
 				testJs()
-				vConsole.log("======btnAction=======")
+				console.log('======btnAction=======')
 				ft.miniProgram.sendWebviewEvent({
   					test: 123
 				})
 			}
 
 			function openAction() {
-				vConsole.log("======openAction=======")
+				console.log('======openAction=======')
 				ft.miniProgram.navigateTo({ url: '/pages/index/index' })
 			}
 		</script>
@@ -80,13 +86,7 @@
 
 		<script src="test.js"></script>
 
-		<script>
-    	// 创建vConsole实例
-    	var vConsole = new VConsole();
-
-    	// 输出日志信息
-    	console.log('Hello, vConsole!');
-  		</script>
+		
 
 		<header>
   			<h1>HTML5 SKeleton</h1>
