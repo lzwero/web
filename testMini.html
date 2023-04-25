@@ -46,6 +46,12 @@
 			ft.miniProgram.onWebviewEvent( (res) => {
 				console.log(res.test) // 123
 			} )
+
+			ft.registNativeAPIHandler('getMini', function(res) {
+  				// app2jsFunction callback
+				console.log(res);
+			})
+
 			// 创建vConsole实例
     		// var vConsole = new VConsole();
 			function btnAction() {
