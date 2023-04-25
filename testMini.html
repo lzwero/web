@@ -33,16 +33,18 @@
   				console.log('getMini');
   				return params + 'from_H5'
 			}
-
-			function onEvent(e) {
-  				console.log(e.test) // 123
-			}
-			// 注册监听
-			ft.miniProgram.onWebviewEvent(onEvent)
 		</script>
 
 		<script >
 
+			// function onEvent(e) {
+  	// 			console.log(e.test) // 123
+			// }
+			// // 注册监听
+			// ft.miniProgram.onWebviewEvent(onEvent)
+			ft.miniProgram.onWebviewEvent( (res) => {
+				console.log(res.test) // 123
+			} )
 			// 创建vConsole实例
     		// var vConsole = new VConsole();
 			function btnAction() {
