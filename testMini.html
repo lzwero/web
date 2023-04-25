@@ -5,6 +5,7 @@
 		<script type="text/javascript" src="finclip.js">
 			
 		</script>
+		
 		<script src="https://unpkg.com/vconsole/dist/vconsole.min.js"></script>
 		<script>
   			// VConsole will be exported to `window.VConsole` by default.
@@ -36,6 +37,7 @@
 			
 
 			function btnAction() {
+				testJs()
 				console.log("======btnAction=======")
 				ft.miniProgram.sendWebviewEvent({
   					test: 123
@@ -73,6 +75,8 @@
 	</head>
 
 	<body>
+
+		<script src="test.js"></script>
 
 		<header>
   			<h1>HTML5 SKeleton</h1>
