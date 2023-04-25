@@ -7,10 +7,26 @@
     function handleClick() {
       alert("Button clicked!");
     }
+    function btnAction() {
+				alert("Button btnAction!");
+				// console.log('======btnAction=======');
+				// testJs();
+				// ft.miniProgram.sendWebviewEvent({
+  		// 			test: 123
+				// });
+			}
+
+			function openAction() {
+				alert("Button openAction!");
+				// console.log('======openAction=======');
+				// ft.miniProgram.navigateTo({ url: '/pages/index/index' });
+			}
   </script>
 </head>
 <body>
   <h1>Click Event Example</h1>
   <button onclick="handleClick()">Click me</button>
+  <button οnclick="btnAction()">发送事件给小程序</button>
+	<button οnclick="openAction()">打开小程序</button>
 </body>
 </html>
