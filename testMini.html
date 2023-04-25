@@ -37,16 +37,16 @@
 			// 创建vConsole实例
     		var vConsole = new VConsole();
 			function btnAction() {
-				testJs()
-				console.log('======btnAction=======')
+				testJs();
+				console.log('======btnAction=======');
 				ft.miniProgram.sendWebviewEvent({
   					test: 123
-				})
+				});
 			}
 
 			function openAction() {
-				console.log('======openAction=======')
-				ft.miniProgram.navigateTo({ url: '/pages/index/index' })
+				console.log('======openAction=======');
+				ft.miniProgram.navigateTo({ url: '/pages/index/index' });
 			}
 		</script>
 
