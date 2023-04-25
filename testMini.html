@@ -6,7 +6,7 @@
 			
 		</script>
 		<script src="https://cdn.bootcdn.net/ajax/libs/vConsole/3.9.1/vconsole.min.js"></script>
-  		<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/vConsole/3.9.1/vconsole.min.css">
+  		<!-- <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/vConsole/3.9.1/vconsole.min.css"> -->
 		<script>
     	// 创建vConsole实例
     	var vConsole = new VConsole();
@@ -33,15 +33,15 @@
   				console.log('getMini');
   				return params + 'from_H5'
 			}
-		</script>
-
-		<script >
 
 			function onEvent(e) {
   				console.log(e.test) // 123
 			}
 			// 注册监听
 			ft.miniProgram.onWebviewEvent(onEvent)
+		</script>
+
+		<script >
 
 			// 创建vConsole实例
     		// var vConsole = new VConsole();
