@@ -53,10 +53,20 @@
 				console.log('======openAction=======');
 				ft.miniProgram.navigateTo({ url: '/pages/index/index' });
 			}
+
+			function nativeAction() {
+				// alert("Button openAction!");
+				console.log('======nativeAction=======');
+				// ft.miniProgram.navigateTo({ url: '/pages/index/index' });
+
+				ft.callNativeAPI('webTestDemo1', { name: 'getLocationFromH5' }, result => {
+  					console.log(result.event)
+				})
+			}
 	
-    function handleClick() {
-      alert("Button clicked!");
-    }
+		    function handleClick() {
+		      alert("Button clicked!");
+		    }
 		</script>
 
 
@@ -72,6 +82,7 @@
   			<h1>HTML5 SKeleton</h1>
 		</header>
 		<button onclick="btnAction()">发送事件给小程序</button>
+ 		<button onclick="nativeAction()">发送事件给原生</button>
  		<button onclick="openAction()">打开小程序</button>
  		<button onclick="handleClick()">Click me</button>
 		<footer>
